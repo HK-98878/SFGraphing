@@ -84,7 +84,7 @@ class PlotDataSet {
         throw std::runtime_error("Empty y value data");
 
       size_t labels_sz = labels.size();
-      std::vector<PlotDataSet> out(sz);
+      std::vector<PlotDataSet> out(internal_sz);
 
       std::vector<std::vector<float>> data = std::vector<std::vector<float>>(internal_sz);
       for (size_t i = 0; i < internal_sz; ++i) {
@@ -108,7 +108,7 @@ class PlotDataSet {
       }
 
       int labels_sz = labels.size();
-      std::vector<PlotDataSet> out(sz);
+      std::vector<PlotDataSet> out(internal_sz);
 
       std::vector<std::vector<float>> xdata = std::vector<std::vector<float>>(internal_sz);
       std::vector<std::vector<float>> ydata = std::vector<std::vector<float>>(internal_sz);

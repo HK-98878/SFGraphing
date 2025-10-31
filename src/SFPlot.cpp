@@ -147,8 +147,6 @@ void SFPlot::GenerateVertices() {
   xaxislabel.setPosition(CoordToWindowPosition(sf::Vector2f(_xCoordBounds.y, 0)) +
                          sf::Vector2f(_margin * 0.3f, 0));
 
-  xaxislabel.rotate(-90);
-
   _textElementArray.push_back(xaxislabel);
 
   //------
@@ -179,7 +177,7 @@ void SFPlot::GenerateVertices() {
     sf::Text indicatorText;
     indicatorText.setCharacterSize(characterSize);
     indicatorText.setFont(_font);
-    indicatorText.setString(ToString(x, 2));
+    indicatorText.setString(ToString(x, 0));
     indicatorText.setFillColor(_axesColor);
 
     sf::FloatRect tDimension = indicatorText.getLocalBounds();
