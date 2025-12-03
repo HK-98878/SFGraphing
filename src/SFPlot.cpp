@@ -21,7 +21,7 @@ sf::Vector2f SFPlot::CoordToWindowPosition(const sf::Vector2f& coords) {
   sf::Vector2f windowPosition;
 
   float xAxisLength = _dimension.x - 2.f * _margin;
-  float xAxisRange = _xCoordBounds.y - _yCoordBounds.y;
+  float xAxisRange = _xCoordBounds.y - _xCoordBounds.x;
 
   float yAxisLength = _dimension.y - 2.f * _margin;
   float yAxisRange = _yCoordBounds.y - _yCoordBounds.x;
